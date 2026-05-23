@@ -1,0 +1,46 @@
+# ── Web Framework ──────────────────────────────────────────────────────────────
+fastapi==0.136.1
+uvicorn[standard]==0.29.0
+sse-starlette==2.1.0
+python-multipart==0.0.29
+
+# ── Frontend ───────────────────────────────────────────────────────────────────
+streamlit==1.35.0
+
+# ── Data validation ────────────────────────────────────────────────────────────
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# ── LangChain ─────────────────────────────────────────────────────────────────
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-core==0.2.1
+langchain-chroma==0.1.1
+
+# ── Vector DB ─────────────────────────────────────────────────────────────────
+chromadb==0.5.0
+
+# ── Embeddings & ML ───────────────────────────────────────────────────────────
+sentence-transformers==3.0.0
+# NOTE: Install torch separately with CPU-only build to avoid the 228MB MKL package:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu --no-deps
+# torch is intentionally excluded from this file.
+
+# ── Ollama ────────────────────────────────────────────────────────────────────
+ollama==0.2.1
+
+# ── HTTP ──────────────────────────────────────────────────────────────────────
+httpx==0.27.0
+requests==2.32.2
+aiohttp==3.9.5
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+datasets==2.19.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm==4.66.4
+loguru==0.7.2
+tenacity==8.3.0
+python-dotenv==1.0.1
